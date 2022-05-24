@@ -26,12 +26,11 @@ tasks.withType<KotlinCompile>().all {
 
 repositories {
     mavenCentral()
-    mavenLocal()
 }
 
 dependencies {
     implementation("org.ow2.asm:asm:9.3")
-    implementation("com.roscopeco.jasm:jasm:0.1-SNAPSHOT")
+    implementation("com.roscopeco.jasm:jasm:0.1")
 }
 
 publishing {

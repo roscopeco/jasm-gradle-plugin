@@ -27,23 +27,14 @@ However, as this is still a WIP, there's plenty still to do:
 
 ### How?
 
-Because it's so early in development this plugin isn't released to any plugin repositories yet.
-JASM is also not yet on Maven Central, so the first thing you'll need to do if you want to use this
-is publish JASM and this plugin to your local Maven repository.
-
-In the JASM source tree:
+Because it's so early in development this plugin isn't released to any plugin repositories yet,
+so the first thing you'll need to do if you want to use this is publish it to your local Maven repository:
 
 ```shell
 ./gradlew publishToMavenLocal
 ```
 
-And then in the source tree for this project:
-
-```shell
-./gradlew publishToMavenLocal
-```
-
-Once that's done for both projects, you should be able to create a new Gradle project. In that, add
+Once that's done, you should be able to create a new Gradle project. In that, add
 the following to `settings.gradle.kts` (N.B **not** `build.gradle.kts`!)
 
 ```kotlin
