@@ -3,19 +3,28 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     `java-gradle-plugin`
     `maven-publish`
+    id("com.gradle.plugin-publish") version "1.0.0-rc-2"
     kotlin("jvm") version "1.6.10"
 }
 
 group = "com.roscopeco.jasm"
-version = "0.1-SNAPSHOT"
+version = "0.1"
 
 gradlePlugin {
     plugins {
         create("jasmPlugin") {
             id = "com.roscopeco.jasm"
             implementationClass = "com.roscopeco.jasm.gradle.JasmPlugin"
+            displayName = "Jasm Plugin"
+            description = "Plugin supporting the Jasm assembler"
         }
     }
+}
+
+pluginBundle {
+    website = "https://github.com/roscopeco/jasm-gradle-plugin"
+    vcsUrl = "https://github.com/roscopeco/jasm-gradle-plugin.git"
+    tags = listOf("jasm", "assembler")
 }
 
 tasks.withType<KotlinCompile>().all {
