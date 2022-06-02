@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "com.roscopeco.jasm"
-version = "0.1"
+version = "0.3.0"
 
 gradlePlugin {
     plugins {
@@ -29,7 +29,7 @@ pluginBundle {
 
 tasks.withType<KotlinCompile>().all {
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "11"
     }
 }
 
@@ -39,7 +39,7 @@ repositories {
 
 dependencies {
     implementation("org.ow2.asm:asm:9.3")
-    implementation("com.roscopeco.jasm:jasm:0.1")
+    implementation("com.roscopeco.jasm:jasm:0.3.0")
 }
 
 publishing {
