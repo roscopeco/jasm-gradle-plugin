@@ -7,6 +7,10 @@
 This project contains a Gradle plugin that allows you to integrate JASM code into your Gradle builds
 alongside Java and other languages. 
 
+The plugin is available in the [Gradle Plugin Repository](https://plugins.gradle.org/plugin/com.roscopeco.jasm)
+and can be applied directly to your Gradle project without any additional download. Follow the link
+for latest version information.
+
 It's _very_ early days for this right now, and it's pretty much hacked together just enough to work. 
 However, it _does_ work well enough to assemble Jasm code as part of a Gradle project.
 
@@ -23,6 +27,10 @@ However, as this is still a WIP, there's plenty still to do:
 * Stop using deprecated Gradle features
 * Tidy up the code
 * and much more
+
+### Requirements
+
+* Java 11 or above (for the VM running Gradle)
 
 ### How?
 
