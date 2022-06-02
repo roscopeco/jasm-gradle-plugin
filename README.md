@@ -38,7 +38,7 @@ Add the following in your `build.gradle.kts`:
 
 ```kotlin
 plugins {
-    id("com.roscopeco.jasm") version "0.3.0"
+    id("com.roscopeco.jasm") version "0.4.0"
 }
 ```
 
