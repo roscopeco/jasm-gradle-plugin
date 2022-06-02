@@ -2,6 +2,7 @@ package com.roscopeco.jasm.gradle
 
 import com.roscopeco.jasm.JasmAssembler
 import org.gradle.process.internal.worker.RequestHandler
+import org.objectweb.asm.Opcodes
 import java.io.File
 import java.io.FileInputStream
 import java.nio.file.Files
@@ -13,7 +14,7 @@ internal class JasmExecutor : RequestHandler<JasmSpec, JasmResult> {
         request.sourceFiles.forEach {
 
             val relativeSource = relativeSourceFilename(it.absolutePath, request.sourceSetDirectories)
-            val code = JasmAssembler(it.name) { FileInputStream(Paths.get(it.absolutePath).toFile()) }.assemble()
+            val code = JasmAssembler(it.name, Opcodes.V11) { FileInputStream(Paths.get(it.absolutePath).toFile()) }.assemble()
             val outputPath = Paths.get(request.outputDirectory.absolutePath, relativeSource)
 
             outputPath.parent.toFile().mkdirs()
