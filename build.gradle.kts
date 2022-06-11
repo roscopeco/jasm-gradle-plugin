@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "com.roscopeco.jasm"
-version = "0.4.0"
+version = "0.5.0"
 
 gradlePlugin {
     plugins {
@@ -39,7 +39,7 @@ repositories {
 
 dependencies {
     implementation("org.ow2.asm:asm:9.3")
-    implementation("com.roscopeco.jasm:jasm:0.4.0")
+    implementation("com.roscopeco.jasm:jasm:0.5.0")
 }
 
 publishing {
