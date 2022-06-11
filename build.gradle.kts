@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "com.roscopeco.jasm"
-version = "0.5.0-SNAPSHOT"
+version = "0.5.0"
 
 gradlePlugin {
     plugins {
