@@ -39,7 +39,7 @@ repositories {
 
 dependencies {
     implementation("org.ow2.asm:asm:9.3")
-    implementation("com.roscopeco.jasm:jasm:0.5.0")
+    implementation("com.roscopeco.jasm:jasm:0.6.0")
 }
 
 publishing {
