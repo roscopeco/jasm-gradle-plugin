@@ -27,6 +27,11 @@ pluginBundle {
     tags = listOf("jasm", "assembler")
 }
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
 tasks.withType<KotlinCompile>().all {
     kotlinOptions {
         jvmTarget = "11"
