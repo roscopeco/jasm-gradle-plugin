@@ -2,12 +2,12 @@
 
 ### What?
 
-[JASM](https://github.com/roscopeco/jasm) is an assembler for JVM bytecode. 
+[JASM](https://github.com/roscopeco/jasm) is an assembler for JVM bytecode.
 
 This project contains a Gradle plugin that allows you to integrate JASM code into your Gradle builds
 alongside Java and other languages. 
 
-The plugin is available in the [Gradle Plugin Repository](https://plugins.gradle.org/plugin/com.roscopeco.jasm)
+The plugin is available in the [Gradle Plugin Repository](https://plugins.gradle.org/plugin/com.uselessmnemonic.jasm-plugin)
 and can be applied directly to your Gradle project without any additional download. Follow the link
 for latest version information.
 
@@ -38,7 +38,7 @@ Add the following in your `build.gradle.kts`:
 
 ```kotlin
 plugins {
-    id("com.roscopeco.jasm") version "0.7.0"
+    id("com.uselessmnemonic.jasm-plugin") version "0.9.0"
 }
 ```
 
@@ -46,6 +46,7 @@ There's an example project here which illustrates how things should be laid out:
 
 ### Who?
 
-JASM is copyright 2022 Ross Bamford (roscopeco AT gmail DOT com). 
+JASM is copyright 2022 Ross Bamford (roscopeco AT gmail DOT com).
+2024 Christopher Madrigal (chrisjmadrigal AT gmail DOT com)
 
 See LICENSE.md for the gory legal stuff (spoiler: MIT).
